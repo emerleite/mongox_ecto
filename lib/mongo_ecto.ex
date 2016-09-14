@@ -6,7 +6,7 @@ defmodule Mongo.Ecto do
   including common pitfalls and extra functionalities.
 
   Check the [Ecto documentation](http://hexdocs.pm/ecto) for an introduction
-  or [examples/simple](https://github.com/michalmuskala/mongodb_ecto/tree/master/examples/simple)
+  or [examples/simple](https://github.com/emerleite/mongox_ecto/tree/master/examples/simple)
   for a sample application using Ecto and MongoDB.
 
   ## Repositories
@@ -388,7 +388,7 @@ defmodule Mongo.Ecto do
 
   @doc false
   def start_link(repo, opts) do
-    {:ok, _} = Application.ensure_all_started(:mongodb_ecto)
+    {:ok, _} = Application.ensure_all_started(:mongox_ecto)
 
     repo.__mongo_pool__.start_link(opts)
   end
