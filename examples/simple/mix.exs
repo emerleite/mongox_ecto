@@ -9,12 +9,12 @@ defmodule Simple.Mixfile do
 
   def application do
     [mod: {Simple.App, []},
-     applications: [:mongodb_ecto, :ecto]]
+     applications: [:mongox_ecto, :ecto]]
   end
 
   defp deps do
     [{:mongodb_ecto, path: "../.."},
      {:ecto, path: "../../deps/ecto", override: true},
-     {:mongodb, path: "../../deps/mongodb", override: true}]
+     {:mongodb, path: "../../deps/mongox", override: true}]
   end
 end
