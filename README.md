@@ -1,8 +1,8 @@
 # Mongo.Ecto
 
-[![Travis Build Status](https://img.shields.io/travis/michalmuskala/mongodb_ecto.svg)](https://travis-ci.org/michalmuskala/mongodb_ecto)
-[![Coveralls Coverage](https://img.shields.io/coveralls/michalmuskala/mongodb_ecto.svg)](https://coveralls.io/github/michalmuskala/mongodb_ecto)
-[![Inline docs](http://inch-ci.org/github/michalmuskala/mongodb_ecto.svg?branch=master)](http://inch-ci.org/github/michalmuskala/mongodb_ecto)
+[![Travis Build Status](https://img.shields.io/travis/emerleite/mongox_ecto.svg)](https://travis-ci.org/emerleite/mongox_ecto)
+[![Coveralls Coverage](https://img.shields.io/coveralls/emerleite/mongox_ecto.svg)](https://coveralls.io/github/emerleite/mongox_ecto)
+[![Inline docs](http://inch-ci.org/github/emerleite/mongox_ecto.svg?branch=master)](http://inch-ci.org/github/emerleite/mongox_ecto)
 
 `Mongo.Ecto` is a MongoDB adapter for Ecto.
 
@@ -54,14 +54,14 @@ end
 Add Mongo.Ecto as a dependency in your `mix.exs` file.
 ```elixir
 def deps do
-  [{:mongodb_ecto, "~> 0.1"}]
+  [{:mongox_ecto, "0.1.3"}]
 end
 ```
 
 You should also update your applications to include both projects.
 ```elixir
 def application do
-  [applications: [:logger, :mongodb_ecto, :ecto]]
+  [applications: [:logger, :mongox_ecto, :ecto]]
 end
 ```
 
@@ -114,14 +114,12 @@ branches: 2.4.x, 2.6.x, 3.0.x
 To contribute you need to compile `Mongo.Ecto` from source and test it:
 
 ```
-$ git clone https://github.com/michalmuskala/mongodb_ecto.git
-$ cd mongodb_ecto
+$ git clone https://github.com/emerleite/mongox_ecto.git
+$ cd mongox_ecto
 $ mix test
 ```
 
 ## License
-
-Copyright 2015 Michał Muskała
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
