@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.1.0
+## v0.1.5
 
   * Fork from https://github.com/michalmuskala/mongodb_ecto
   * Renamed to mongox_ecto

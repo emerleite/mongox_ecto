@@ -1,7 +1,7 @@
 defmodule Mongo.Ecto.Mixfile do
   use Mix.Project
 
-  @version "0.1.0"
+  @version "0.1.5"
 
   def project do
     [app: :mongox_ecto,
@@ -24,9 +24,7 @@ defmodule Mongo.Ecto.Mixfile do
       {:ecto, "~> 1.0"},
       {:dialyze, "~> 0.2.0", only: :dev},
       {:excoveralls, "~> 0.3.11", only: :test},
-      {:inch_ex, only: :docs},
-      {:earmark, "~> 0.1", only: :docs},
-      {:ex_doc, "~> 0.8", only: :docs}
+      {:ex_doc, github: "elixir-lang/ex_doc"}
     ]
   end
 

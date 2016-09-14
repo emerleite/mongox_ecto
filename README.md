@@ -16,7 +16,7 @@ config :my_app, Repo,
   database: "ecto_simple",
   username: "mongodb",
   password: "mongosb",
-  hostname: "localhost"
+  hostname: "localhost:27017,localhost:27018"
 
 # In your application code
 defmodule Repo do
