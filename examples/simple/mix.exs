@@ -15,6 +15,6 @@ defmodule Simple.Mixfile do
   defp deps do
     [{:mongox_ecto, path: "../.."},
      {:ecto, path: "../../deps/ecto", override: true},
-     {:mongodb, path: "../../deps/mongox", override: true}]
+     {:mongox, path: "../../deps/mongox", override: true}]
   end
 end

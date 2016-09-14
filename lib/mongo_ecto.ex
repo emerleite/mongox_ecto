@@ -301,7 +301,7 @@ defmodule Mongo.Ecto do
 
   ## MongoDB adapter features
 
-  The adapter uses `mongodb` for communicating with the database and a pooling
+  The adapter uses `mongox` for communicating with the database and a pooling
   library such as `poolboy` for managing connections.
 
   The adapter has support for:
