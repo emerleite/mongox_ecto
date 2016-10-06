@@ -10,8 +10,7 @@ defmodule Mongo.Ecto.Mixfile do
      deps: deps,
      test_coverage: [tool: ExCoveralls],
      description: description,
-     package: package,
-     docs: docs]
+     package: package]
   end
 
   def application do
@@ -23,7 +22,7 @@ defmodule Mongo.Ecto.Mixfile do
       {:mongox, "0.1.3"},
       {:ecto, "~> 1.0"},
       {:dialyze, "~> 0.2.0", only: :dev},
-      {:excoveralls, "~> 0.3.11", only: :test},
+      {:excoveralls, "~> 0.5", only: :test},
       {:ex_doc, github: "elixir-lang/ex_doc"}
     ]
   end
@@ -39,12 +38,5 @@ defmodule Mongo.Ecto.Mixfile do
      licenses: ["Apache 2.0"],
      links: %{"GitHub" => "https://github.com/emerleite/mongox_ecto"},
      files: ~w(mix.exs README.md CHANGELOG.md lib)]
-  end
-
-  defp docs do
-    [readme: "README.md",
-     source_url: "https://github.com/emerleite/mongox_ecto",
-     source_ref: "v#{@version}",
-     main: "README"]
   end
 end
