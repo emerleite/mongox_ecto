@@ -23,7 +23,7 @@ defmodule Mongo.Ecto.Mixfile do
       {:ecto, "~> 1.0"},
       {:dialyze, "~> 0.2.0", only: :dev},
       {:excoveralls, "~> 0.5", only: :test},
-      {:ex_doc, github: "elixir-lang/ex_doc"}
+      {:ex_doc, github: "elixir-lang/ex_doc", only: :dev}
     ]
   end
 
